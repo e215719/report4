@@ -6,7 +6,7 @@ package jp.ac.uryukyu.ie.e215719;
  *  int hitPoint; //敵のHP
  *  int attack; //敵の攻撃力
  *  boolean dead; //敵の生死状態。true=死亡。
- * Created by tnal on 2016/11/13.
+ * Created 2021/11/10.
  */
 public class Hero {
     private String name = "勇者";
