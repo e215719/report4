@@ -9,22 +9,43 @@ package jp.ac.uryukyu.ie.e215719;
  * Created 2021/11/10.
  */
 public class Hero {
-    private String name = "勇者";
+    private String name;
+    /**
+    * nameのsetterメソッド。
+    * name変更時に条件をで設定の許可をする。
+    * @param name 設定対象
+    */
     public void setName(String name) {
         if (name.length() == 0) {
             System.out.println("入力がないので「勇者」となります");
+            this.name = "勇者";
         } else {
             this.name = name;
         }
     }
+    /**
+    * nameのgetterメソッド。
+    * nameを取得する。
+    * @param name 取得対象
+    */
     public String getName() {
         return this.name;
     }
     private int hitPoint;
+    /**
+    * hitPointのgetterメソッド。
+    * HPを取得する。
+    * @param hitPoint 取得対象
+    */
     public int getHitPoint() {
         return this.hitPoint;
     }
     private int attack;
+    /**
+    * attackのsetterメソッド。
+    * 攻撃力を設定する。
+    * @param attack 設定対象
+    */
     public void setAttack(int attack) {
         if (attack < 0) {
             this.attack = 0;
@@ -33,6 +54,11 @@ public class Hero {
         }
     }
     private boolean dead;
+    /**
+    * deadのgetterメソッド。
+    * 生死状態を取得する。
+    * @param dead 取得対象
+    */
     public boolean getDead() {
         return this.dead;
     }

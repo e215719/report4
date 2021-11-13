@@ -10,11 +10,21 @@ package jp.ac.uryukyu.ie.e215719;
  */
 public class Enemy {
     private String name;
+    /**
+    * nameのgetterメソッド。
+    * nameを取得する。
+    * @param name 取得対象
+    */
     public String getName() {
         return this.name;
     }
     private int hitPoint;
     private int attack;
+    /**
+    * attackのsetterメソッド。
+    * 攻撃力を設定する。
+    * @param attack 設定対象
+    */
     public void setAttack(int attack) {
         if (attack < 0) {
             this.attack = 0;
@@ -23,6 +33,11 @@ public class Enemy {
         }
     }
     private boolean dead;
+    /**
+    * deadのgetterメソッド。
+    * 生死状態を取得する。
+    * @param dead 取得対象
+    */
     public boolean getDead() {
         return this.dead;
     }
