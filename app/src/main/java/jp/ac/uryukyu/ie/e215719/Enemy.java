@@ -10,37 +10,9 @@ package jp.ac.uryukyu.ie.e215719;
  */
 public class Enemy {
     private String name;
-    /**
-    * nameのgetterメソッド。
-    * nameを取得する。
-    * @param name 取得対象
-    */
-    public String getName() {
-        return this.name;
-    }
     private int hitPoint;
     private int attack;
-    /**
-    * attackのsetterメソッド。
-    * 攻撃力を設定する。
-    * @param attack 設定対象
-    */
-    public void setAttack(int attack) {
-        if (attack < 0) {
-            this.attack = 0;
-        } else {
-            this.attack = attack;
-        }
-    }
     private boolean dead;
-    /**
-    * deadのgetterメソッド。
-    * 生死状態を取得する。
-    * @param dead 取得対象
-    */
-    public boolean getDead() {
-        return this.dead;
-    }
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
@@ -83,4 +55,34 @@ public class Enemy {
         }
     }
 
+    /**
+    * nameのgetterメソッド。
+    * nameを取得する。
+    * @param name 取得対象
+    */
+    public String getName() {
+        return this.name;
+    }
+
+    /**
+    * attackのsetterメソッド。
+    * 攻撃力を設定する。
+    * @param attack 設定対象
+    */
+    public void setAttack(int attack) {
+        if (attack < 0) {
+            this.attack = 0;
+        } else {
+            this.attack = attack;
+        }
+    }
+    
+    /**
+    * deadのgetterメソッド。
+    * 生死状態を取得する。
+    * @param dead 取得対象
+    */
+    public boolean getDead() {
+        return this.dead;
+    }
 }
